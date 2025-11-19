@@ -21,8 +21,8 @@ void dfs(node* root,string s){
         m.insert({root->c,s});
         return;}
     
-    dfs(root->left , s + "1");
-    dfs(root->right, s + "2");
+    dfs(root->left , s + "0");
+    dfs(root->right, s + "1");
 }
 
 
@@ -93,5 +93,7 @@ int main() {
     cout << "Percentage of compression : " << 100-resultOfCompression << endl;
     return 0;
 }
+
+
 
 
